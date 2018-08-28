@@ -1,0 +1,9 @@
+
+Mirroring Command to download any update site:
+=============================================
+
+compose.exe -application org.eclipse.equinox.p2.artifact.repository.mirrorApplication -source http://dl.bintray.com/testng-team/testng-eclipse-release/updatesites/6.14.0.201802161500/ -destination file:D:\TestNG_US
+
+OR
+
+eclipse.exe -application org.eclipse.equinox.p2.artifact.repository.mirrorApplication -source http://dl.bintray.com/testng-team/testng-eclipse-release//updatesites/6.13.0.201712040650/ -destination file:D:\TestNG_US
