@@ -1,0 +1,19 @@
+GIT Repositories Commands:
+=========================
+D:\NewFolder>set PATH=%PATH%;D:\PortableGit\bin;
+
+D:\NewFolder>git version
+
+D:\NewFolder>git pull https://github.com/moidul26/Moidul_Git_Repo.git
+
+D:\NewFolder>git init
+
+D:\NewFolder>git status
+
+D:\NewFolder>git add TextDocument.txt
+
+D:\NewFolder>git commit .    ==>Here type a message to commit.
+
+D:\NewFolder>git push -u origin master https://github.com/moidul26/Moidul_Git_Repo.git
+			OR
+D:\NewFolder>git push --set-upstream https://github.com/moidul26/Moidul_Git_Repo.git
