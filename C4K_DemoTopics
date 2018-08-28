@@ -1,0 +1,162 @@
+BMS TEAM
+AGENDA: C4K DEMO TRAINING
+
+1. Autosar Project Creation
+2. Autosar File creation:
+i) default.arxml file --creation of modules, containers,parameters. Then Generate Report by r/c on the "default.arxml" file.
+ii) Automation of EcucDesc file- EcucMapping.
+
+Now to validate/check if any configuration is missing or any mandatory parameters are not configured in configuration file, c4k tool provides two types of validation : - To generate proper CodeGeneration, this  validation error  has to be configured.
+
+3.Batch validation: Press F8 on particular Container/Module. Configure some parameter and again Press F8 on that Container/Module. Then error marker should be removed and total error count should also get reduced.
+4.Live validation: Trigger Live validation. Configure some parameter, Then error marker should get removed instantly and total error count should also get reduced.
+
+5.Clear validation markers 
+
+6.Explain all views- Properties view, Ecuc Detail view.
+7. "Autosar Search" dialog to search any element, modules, containers, parameters
+
+8. BSWBundle Project creation with C4K workflow execution - Import any existing BSWBundle project and execute c4k workflow.
+
+What is the use of BSWBundle project?? 
+Answer: Bsw bundle is a template project to help "bsw bundle owners/module owners". It has pre-created folder structures such as mapping , codegen and validation to help bundle owners in-advance.
+E.g: There are some specific Xtend files  need to be created for Mapping and code generation inside bsw bundle project.
+By nature the bsw bundle projects are normal eclipse plugins so that after creating this kind of projects we can create UpdateSite out of it and install into c4k or can contribute to platform. 
+
+NOTE1: There are some specific features in c4k which can only be enabled for bsw bundle projects.
+
+NOTE2: Most of the BSWBundles will have these extensions:- 1)Mapping 2)Validation 3)Workflow, and other extensions depends on User needs. Say if BSWMDT and VSMD are required then BSWMDT and VSMD extensions would be present.
+
+
+
+9. Code Generation Interface::-- In Code Generation Wizard, Modules will be displayed in Module(s) table with checkbox. Modules that have a registered code generator shall be checkable and Modules that don't have a registered code generator shall be greyed out and not checkable.
+
+
+10. Workflow is a mechanism. By using workflow we can do CodeGeneration, EcucMapping, RegenarateHandle ID's etc..
+
+Workflow for Com module:	
+c4k -WComponent=Com.GenerateCom -Winput=D:\MOIDUL\...C4K_4.2.1_TestingInputs\Inputs_4.2.1_ForTesting\Diagnostics_Communication.arxml -Woutput=D:\MOIDUL\...C4K_4.2.1_builds\16.4.20_4th_April\compose4ksar-16.4.20-win32.win32.x86_64\output
+
+Note:- c4k -Wids ->To check registered c4k workflows.
+
+For "Code Generation" "single module"  command using Workflow through Command Prompt (Options for Xtend code generator):
+======================================================================================================================
+c4k -WComponent=Com.GenerateCom -Winput=D:\MOIDUL\...C4K_4.2.1_TestingInputs\Inputs_4.2.1_ForTesting\Diagnostics_Communication.arxml  -Woptions=[-bend,lend] -Woutput=C:\Users\moiduli\Desktop\C4k_Command_Line\output
+
+
+For "Code Generation" "multiple modules/single module"  command using Workflow through Command Prompt:
+================================================================================================
+c4k -workflow C:\Users\moiduli\Desktop\C4k_Command_Line\GenNm.c4k
+
+
+For "ECUC Mapping" Workflow command through Command Prompt:
+==========================================================
+c4k -workflow C:\Users\moiduli\Desktop\C4k_Command_Line\mapping.c4k
+
+
+For "DBC Workflow" through Command Prompt:
+=========================================
+1. DBC2SYS: Specify the below command in the command prompt and press Enter key
+For example : 
+c4k -WComponent=DBC2SYS -Winput=D:\MOIDUL\...C4K_4.2.1_TestingInputs\Inputs_4.2.1_ForTesting\..Projects\Workflows_C4K\Pradeep_DBC_Workflows\B20516_206A_3.dbc -Woutput=C:\Users\moiduli\Desktop\C4k_Command_Line\output -WnmPdus="ACU_A1 - 1336,ACU_A2 - 32,ATCU_A3 - 166"
+
+2. SYS2ECU: Specify the below command in the command prompt and press Enter key
+For example : 
+c4k -WComponent=SYS2ECU -Winput=C:\Users\moiduli\Desktop\C4k_Command_Line\output\system\dbc\EcuInstance_ECU_Extract_Supporting_Files\B20516_206A_3_dbc_System.arxml -Woutput=C:\Users\moiduli\Desktop\C4k_Command_Line\output\ECM_ECU_Extract.arxml -WecuName=ECM
+
+
+For "Regenerate Handle ID" workflow through GUI:
+===============================================
+Note: First do Ecuc mapping using IOPT file in project(say P1) and copy the generated "EcucDescription" file in the "testdata" folder in another project(say P2). Then perform RegHandle ID through normal way in ( Project P1), r/c on Project/Module/Container, then click on "RegenarateHandleID"
+And save the updated "ECUCDescription_UI" file.
+
+Now, run RegHandleId c4k workflow file from Project(P2) through UI and save the updated "EcucDescription_Workflow" file.
+
+After that, "compare both the ECUCDescription files" in Beyond Compare and no differences should be found.
+
+
+For "Regenerate Handle ID" workflow through Command Prompt:
+===========================================================
+c4k -workflow C:\Users\moiduli\Desktop\C4k_Command_Line\RegenerateHandleID_Workflow.c4k
+
+Note: After successfull execution, the EcucDescription file will get updated in the "testfolder" inside the "output" path. 
+Now compare both the EcucDescription files executed through "UI and Command prompt" in Beyond compare and no differences should be found.
+
+
+
+====================================================================================================================================================
+
+NOTE::
+
+1. In "EcucMapping Wizard":
+Autosar/EcucDefs: Autosar Standard Module Definition files
+Autosar/KPIT: VSMD files
+
+2. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
