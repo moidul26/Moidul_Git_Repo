@@ -1,19 +1,19 @@
 GIT Repositories Commands:
 =========================
-D:\NewFolder>set PATH=%PATH%;D:\PortableGit\bin;
+D:\Moidul_Git_Repo>set PATH=%PATH%;D:\PortableGit\bin;
 
-D:\NewFolder>git version
+D:\Moidul_Git_Repo>git version
 
-D:\NewFolder>git pull https://github.com/moidul26/Moidul_Git_Repo.git
+D:\Moidul_Git_Repo>git init
 
-D:\NewFolder>git init
+D:\Moidul_Git_Repo>git pull https://github.com/moidul26/Moidul_Git_Repo.git
 
-D:\NewFolder>git status
+D:\Moidul_Git_Repo>git status
 
-D:\NewFolder>git add TextDocument.txt
+D:\Moidul_Git_Repo>git add TextDocument.txt
 
-D:\NewFolder>git commit .    ==>Here type a message to commit.
+D:\Moidul_Git_Repo>git commit -m "Type a commit message:- FileAddedNewly"
 
-D:\NewFolder>git push -u origin master https://github.com/moidul26/Moidul_Git_Repo.git
+D:\Moidul_Git_Repo>git push
 			OR
-D:\NewFolder>git push --set-upstream https://github.com/moidul26/Moidul_Git_Repo.git
+D:\Moidul_Git_Repo>git push --set-upstream https://github.com/moidul26/Moidul_Git_Repo.git
