@@ -18,6 +18,9 @@ D:\Moidul_Git_Repo>git push
 			OR
 D:\Moidul_Git_Repo>git push --set-upstream https://github.com/moidul26/Moidul_Git_Repo.git
 
+D:\Moidul_Git_Repo>git add .  ====>To Add all the new files present the directory.
+
+D:\Moidul_Git_Repo>git commit . -m "Type a commit message:- FileAddedNewly"   ====>To Commit all changes/modifications/addition/deletion.-
 
 
 D:\Moidul_Git_Repo>git rm TextDocument.txt  ==>To delete a file from GIT Repo.
