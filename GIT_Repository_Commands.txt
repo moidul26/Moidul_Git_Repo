@@ -10,10 +10,14 @@ D:\Moidul_Git_Repo>git pull https://github.com/moidul26/Moidul_Git_Repo.git
 
 D:\Moidul_Git_Repo>git status
 
-D:\Moidul_Git_Repo>git add TextDocument.txt
+D:\Moidul_Git_Repo>git add TextDocument.txt  
 
 D:\Moidul_Git_Repo>git commit -m "Type a commit message:- FileAddedNewly"
 
 D:\Moidul_Git_Repo>git push
 			OR
 D:\Moidul_Git_Repo>git push --set-upstream https://github.com/moidul26/Moidul_Git_Repo.git
+
+
+
+D:\Moidul_Git_Repo>git rm TextDocument.txt  ==>To delete a file from GIT Repo.
